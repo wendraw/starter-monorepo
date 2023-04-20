@@ -1,0 +1,29 @@
+{
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@7.25.0",
+  "scripts": {
+    "dev": "pnpm -F playground dev",
+    "build": "pnpm -r build",
+    "lint": "eslint --cache .",
+    "lint:fix": "pnpm run lint --fix",
+    "check": "tsc --incremental --noEmit",
+    "publish": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm run build && pnpm -r publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
+    "@iconify-json/ri": "^1.1.8",
+    "@types/node": "^18.15.11",
+    "@unocss/reset": "^0.51.5",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.38.0",
+    "typescript": "^4.9.4",
+    "unocss": "^0.51.5",
+    "vite": "^4.0.4",
+    "vite-plugin-dts": "^2.3.0",
+    "vue-tsc": "^1.2.0"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
+  }
+}
