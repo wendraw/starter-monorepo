@@ -18,10 +18,12 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@wendraw/ui': resolve(__dirname, '../packages/ui/src'),
       '@wendraw/lib': resolve(__dirname, '../packages/lib/src'),
+      '@wendraw/lib2': resolve(__dirname, '../packages/inner/lib2/src'),
     },
   },
   optimizeDeps: {
-    exclude: ['@wendraw/lib', '@wendraw/ui'],
+    exclude: ['@wendraw/lib'],
   },
 })

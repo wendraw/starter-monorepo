@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@wendraw/lib": "workspace:*",
+    "@wendraw/lib2": "workspace:*",
     "vue": "^3.2.47"
   },
   "devDependencies": {

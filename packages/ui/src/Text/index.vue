@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { add } from '@wendraw/lib'
+
 defineProps<{
   content: string
 }>()
@@ -6,6 +8,6 @@ defineProps<{
 
 <template>
   <div>
-    {{ content }}
+    {{ content + add(1, 2) }}
   </div>
 </template>

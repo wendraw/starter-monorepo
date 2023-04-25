@@ -29,10 +29,10 @@
     "lib": ["esnext", "dom"],
     "types": ["node", "vite/client"],
     "paths": {
-      "@wendraw/*": ["packages/*/src"]
+      "@wendraw/*": ["packages/*/src", "packages/inner/*/src"]
     }
   },
-  "include": ["packages", "playground"],
+  "include": ["packages", "packages/inner", "playground"],
   "exclude": [
     "node_modules",
     "**/*.md",

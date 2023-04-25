@@ -22,7 +22,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@wendraw/lib': resolve(__dirname, '../lib/src/index.ts'),
+      '@wendraw/lib': resolve(__dirname, '../lib/src'),
+      '@wendraw/lib2': resolve(__dirname, '../inner/lib2/src'),
     },
   },
   build: {
@@ -35,7 +36,7 @@ export default defineConfig({
       fileName: (format, entryName) => `${entryName}.js`,
     },
     rollupOptions: {
-      external: ['vue', '@wendraw/lib'],
+      external: ['vue', '@wendraw/lib', '@wendraw/lib2'],
       output: {
         assetFileNames: '[name].[ext]',
         exports: 'named',
@@ -46,6 +47,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    exclude: ['@wendraw/lib'],
+    exclude: ['@wendraw/lib', '@wendraw/lib2'],
   },
 })
