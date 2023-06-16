@@ -24,6 +24,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    exclude: ['@wendraw/lib'],
+    exclude: ['@wendraw/ui', '@wendraw/lib', '@wendraw/lib2'],
   },
 })

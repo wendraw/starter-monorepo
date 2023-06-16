@@ -39,7 +39,7 @@
     "**/dist",
     "packages/.test",
     "packages/_docs"
-  ],
+  ]
   // "references": [
   //   { "path": "packages/lib" },
   //   { "path": "packages/ui" },

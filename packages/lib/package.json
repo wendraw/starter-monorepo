@@ -9,9 +9,9 @@
   "keywords": [],
   "exports": {
     ".": {
+      "require": "./dist/index.js",
       "import": "./dist/index.js"
-    },
-    "./*": "./*"
+    }
   },
   "main": "dist/index.js",
   "module": "dist/index.js",

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@wendraw/lib": "workspace:*",
+    "@wendraw/lib2": "workspace:*",
     "@wendraw/ui": "workspace:*",
     "vue": "^3.2.47"
   },
