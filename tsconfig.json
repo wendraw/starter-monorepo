@@ -1,38 +1,47 @@
 {
   "compilerOptions": {
+    "composite": true,
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "experimentalDecorators": true,
     "baseUrl": ".",
     "rootDir": ".",
-    "sourceMap": false,
-    "composite": true,
-
-    "strictFunctionTypes": true,
-
-    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "paths": {
+      "@wendraw/*": [
+        "${configDir}/packages/*/src/",
+        "${configDir}/packages/inner/*/src/"
+      ]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "node",
+      "vite/client"
+    ],
     "allowJs": false,
-    "skipLibCheck": true,
-
-    "noUnusedLocals": true,
+    "strict": true,
+    "strictFunctionTypes": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "noImplicitThis": true,
     "noImplicitReturns": false,
-    "strict": true,
-    "isolatedModules": true,
-
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
     "removeComments": false,
-    "jsx": "preserve",
-    "lib": ["esnext", "dom"],
-    "types": ["node", "vite/client"],
-    "paths": {
-      "@wendraw/*": ["packages/*/src", "packages/inner/*/src"]
-    }
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
   },
-  "include": ["packages", "packages/inner", "playground"],
+  "include": [
+    "packages",
+    "packages/inner",
+    "playground"
+  ],
   "exclude": [
     "node_modules",
     "**/*.md",
@@ -40,9 +49,4 @@
     "packages/.test",
     "packages/_docs"
   ]
-  // "references": [
-  //   { "path": "packages/lib" },
-  //   { "path": "packages/ui" },
-  //   { "path": "playground" }
-  // ]
 }

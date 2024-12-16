@@ -11,7 +11,7 @@ export { Button, Text }
 
 export default {
   install(app: App): void {
-    app.component(Button.name, Button)
-    app.component(Text.name, Text)
+    app.component(Button.name ?? 'Button', Button)
+    app.component(Text.name ?? 'Text', Text)
   },
 }

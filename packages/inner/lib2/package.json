@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "private": true,
   "description": "some lib",
-  "author": "",
-  "license": "ISC",
+  "author": "wendraw",
+  "license": "MIT",
   "keywords": [],
   "exports": {
     ".": {
@@ -15,12 +15,13 @@
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "types": "types/index.d.ts",
+  "types": "./src/index.ts",
   "files": [
     "dist"
   ],
   "scripts": {
+    "build": "vite build",
     "dev": "pnpm --parallel vite",
-    "build": "vue-tsc --noEmit && vite build"
+    "prepare": "pnpm build"
   }
 }
