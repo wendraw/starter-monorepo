@@ -20,8 +20,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
-    "dev": "pnpm --parallel vite",
-    "prepare": "pnpm build"
+    "build": "starry build",
+    "dev": "starry dev"
   }
 }

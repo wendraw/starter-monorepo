@@ -16,10 +16,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "vue-tsc --noEmit --skipLibCheck  && vite build",
+    "build": "vue-tsc --noEmit --skipLibCheck  && starry build",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly",
-    "prepare": "pnpm build",
-    "preview": "vite preview"
+    "prepare": "starry build",
+    "preview": "starry preview"
   },
   "peerDependencies": {
     "vue": "^3.2.47"
@@ -30,7 +30,6 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
     "typescript": "^5.7.2",
     "vite": "^6.0.3",
     "vue-tsc": "^2.1.10"

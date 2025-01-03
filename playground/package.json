@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "dev": "starry dev",
+    "build": "vue-tsc && starry build",
+    "preview": "starry preview"
   },
   "dependencies": {
     "@wendraw/lib": "workspace:*",

@@ -20,8 +20,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
-    "prepare": "pnpm build"
+    "build": "starry build",
+    "dev": "starry dev",
+    "prepare": "starry build"
   }
 }
