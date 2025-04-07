@@ -12,12 +12,6 @@
     "rootDir": ".",
     "module": "esnext",
     "moduleResolution": "node",
-    "paths": {
-      "@wendraw/*": [
-        "${configDir}/packages/*/src/",
-        "${configDir}/packages/inner/*/src/"
-      ]
-    },
     "resolveJsonModule": true,
     "types": [
       "node",
